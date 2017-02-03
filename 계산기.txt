@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--¹ÝÀÀÇü À¥-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ë°˜ì‘í˜• ì›¹-->
   <title>Calculator</title>
 </head>
 <body>
@@ -10,7 +10,7 @@
   <table border="1">
     <thead>
       <tr>
-        <td colspan="6"><h1>°è»ê±â</h1></td>
+        <td colspan="6"><h1>ê³„ì‚°ê¸°</h1></td>
       </tr>
     </thead>
     <tbody>
@@ -28,7 +28,7 @@
         <td><input type="button" value="6"></td>
         <td><input type="button" value="-"></td>
         <td><input type="button" value="("></td>
-        <td><input type="button" value="<¤Ñ"></td>
+        <td><input type="button" value="<ã…¡"></td>
       </tr>
       <tr>
         <td><input type="button" value="1"></td>
@@ -42,7 +42,7 @@
         <td><input type="button" value="0"></td>
         <td><input type="button" value="00"></td>
         <td><input type="button" value="."></td>
-        <td><input type="button" value="¡À"></td>
+        <td><input type="button" value="Ã·"></td>
         <td><input type="button" value="+/-"></td>
       </tr>
     </tbody>
