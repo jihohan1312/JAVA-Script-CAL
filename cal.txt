@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--반응형 웹-->
+   <title>Calculator</title>
+ </head>
+ <body>
+   <script>
+   function cal(num){
+    calform.screen.value+=num;
+   }
+   function clearcal(){
+    calform.screen.value="";
+   }
+   function answer(){
+     calform.screen.value = eval(document.calform.screen.value);
+   }
+   </script>
+   <form name="calform">
+   <p>
+   <table border="1" align="center">
+     <thead>
+       <tr>
+         <td colspan="6"><input type="text" name="screen"></td>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><input type="button" value="7" onclick="cal('7')"></td>
+         <td><input type="button" value="8" onclick="cal('8')"></td>
+         <td><input type="button" value="9" onclick="cal('9')"></td>
+         <td><input type="button" value="+"  onclick="cal('+')"></td>
+         <td><input type="button" value="%"  onclick="cal('%')"></td>
+         <td><input type="button" value="Clear" onclick="clearcal()"></td>
+       </tr>
+       <tr>
+         <td><input type="button" value="4" onclick="cal('4')"></td>
+         <td><input type="button" value="5" onclick="cal('5')"></td>
+         <td><input type="button" value="6" onclick="cal('6')"></td>
+         <td><input type="button" value="-"  onclick="cal('-')"></td>
+         <td><input type="button" value="(" ></td>
+         <td><input type="button" value="<ㅡ" ></td>
+       </tr>
+       <tr>
+         <td><input type="button" value="1" onclick="cal('1')"></td>
+         <td><input type="button" value="2" onclick="cal('2')"></td>
+         <td><input type="button" value="3" onclick="cal('3')"></td>
+         <td><input type="button" value="x"  onclick="cal('*')"></td>
+         <td><input type="button" value=")"  ></td>
+         <td rowspan=2><input type="button" value="=" onclick="answer()"></td>
+       </tr>
+       <tr>
+         <td><input type="button" value="0"  onclick="cal('0')"></td>
+         <td><input type="button" value="00"  onclick="cal('00')"></td>
+         <td><input type="button" value="."  onclick="cal('.')"></td>
+         <td><input type="button" value="÷"  onclick="cal('%')"></td>
+         <td><input type="button" value="+/-" ></td>
+       </tr>
+     </tbody>
+     <tfoot>
+       <tr>
+         <td colspan="6"><h1></h1></td>
+       </tr>
+     </tfoot>
+   </table>
+ </p>
+ </form>
+
+ </body>
+ </html>
